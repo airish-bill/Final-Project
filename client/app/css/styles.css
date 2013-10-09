@@ -1,7 +1,17 @@
 body {
     padding-top: 70px;
+    background-image:url('images/pup-coe.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-attachment: fixed;  
+	background-size: 50%;
 }
 
 .hidden {
     display: none;
 }
+
+.fb-comments{
+	margin-left: 150px;
+}
+

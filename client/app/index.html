@@ -1,11 +1,22 @@
 <!doctype html>
 <html>
     <head>
-        <title>Project Title</title>
+        <title>PUP Computer Engineering</title>
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
+
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -14,7 +25,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project Title</a>
+                    <a class="navbar-brand" href="#">
+                        <img src = "css/images/PUP_logo.png" height = "50px" weight = "50px"> PUP Computer Engineering</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav menu-crud">
@@ -39,6 +51,10 @@
                 <div class='row app-content'>
                 </div>
             </div>
+
+            <div class="fb-comments" data-href="http://final-project-type-ab.appspot.com/" data-colorscheme="light" data-numposts="7" data-width="500">
+            </div>
+
         </div>
 
         <!-- scripts -->
@@ -46,8 +62,9 @@
         <script src="js/jquery.js"></script>
         <script src="js/handlebars.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src ="js/underscore.js"></script>
+        <script src="js/backbone.js"></script>
         <script src="js/app.js"></script>
-
 
         <!-- templates -->
         <!-- =================== -->
@@ -109,6 +126,24 @@
             </div>
         </script>
 
+        <script id="tpl-thesis-view-item" type="text/x-handlebars-template">
+            <h1>{{Title}} ({{Year}})</h1>
+            <h4>{{Subtitle}}</h4><br>
+            <p>{{Description}}</p>
+        </script>
+
     </body>
+
+    <footer>
+        <div class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container">
+                <div class="navbar-footer" align = "center">
+                    <b id = "footerName">TYPE AB</b>
+                <span id = "copyright">&nbsp;&copy;&nbsp;2013&nbsp;&nbsp;</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </html>
 

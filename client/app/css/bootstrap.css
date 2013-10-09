@@ -331,7 +331,7 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus {
@@ -4014,8 +4014,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   z-index: 1000;
-  min-height: 50px;
-  margin-bottom: 20px;
+  min-height: 30px;
+  margin-bottom: 0px;
   border: 1px solid transparent;
 }
 
@@ -4183,8 +4183,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: bold;
+}
 }
 
 .navbar-brand:hover,
@@ -4355,7 +4357,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-btn {
-  margin-top: 8px;
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 
@@ -4490,7 +4492,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #800000;
   border-color: #080808;
 }
 
@@ -6802,4 +6804,12 @@ td.visible-print {
   td.hidden-print {
     display: none !important;
   }
+}
+
+.navbar-footer{
+  color: #999999;
+  float: center;
+  padding: 10px 10px;
+  font-size: 12px;
+  line-height: 5px;
 }
