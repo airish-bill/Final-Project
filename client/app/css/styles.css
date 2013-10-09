@@ -1,4 +1,12 @@
+@font-face {
+	font-family: 'Titillium';
+	src: 	url('fonts/titillium.ttf') format('truetype'),
+			url('fonts/titillium.svg') format('svg'),
+			url('fonts/titillium.otf') format('otf');
+}
+
 body {
+	font-family: Titillium;
     padding-top: 70px;
     background-image:url('images/pup-coe.jpg');
 	background-repeat: no-repeat;
