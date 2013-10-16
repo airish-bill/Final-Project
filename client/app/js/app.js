@@ -88,7 +88,7 @@ $(function() {
         },
         search: function(query, callback) {
             $.get('/api/search/?q=' + query, {
-                returned_fields: JSON.stringify(['Year', 'Title'])
+                returned_fields: JSON.stringify(['Title', 'Year'])
             }, function(list) {
                 callback(list);
             });
@@ -177,11 +177,10 @@ $(function() {
                 $.post('api/thesis', object, function(res) {
                 self.router.navigate('list', {trigger: true});
             });
-                alert("Saved.");
                 return false;
             }
             else{
-                alert("Thesis title entry is blank. Fill up all fields.");
+                alert("Thesis title entry is blank.");
             }
         },
 
@@ -251,10 +250,6 @@ $(function() {
        onList: function() {
             app.showList();
             app.loadAllThesis();
-       },
-
-       onDelete: function(id) {
-            app.deleteThesis(id);
        }
 
     });
