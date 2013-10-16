@@ -775,6 +775,7 @@ pre code {
 .row {
   margin-right: -15px;
   margin-left: -15px;
+  margin-top: 20px;
 }
 
 .row:before,
@@ -1404,7 +1405,7 @@ th {
 
 .table {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 300px;
 }
 
 .table thead > tr > th,
@@ -1742,7 +1743,7 @@ textarea.form-control {
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .radio,
@@ -4014,7 +4015,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   z-index: 1000;
-  min-height: 30px;
+  min-height: 20px;
   margin-bottom: 0px;
   border: 1px solid transparent;
 }
@@ -4271,7 +4272,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
+    padding-top: 30px;
     padding-bottom: 15px;
   }
 }
@@ -4305,6 +4306,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-form .form-control {
     display: inline-block;
+    margin-top: 14px;
   }
   .navbar-form .radio,
   .navbar-form .checkbox {
@@ -4524,7 +4526,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: none;
 }
 
 .navbar-inverse .navbar-nav > .disabled > a,
@@ -4556,7 +4558,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .open > a:hover,
 .navbar-inverse .navbar-nav > .open > a:focus {
   color: #ffffff;
-  background-color: #080808;
+  background-color: none;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
@@ -6812,4 +6814,9 @@ td.visible-print {
   padding: 10px 10px;
   font-size: 12px;
   line-height: 5px;
+}
+
+.aboutUs{
+  text-decoration: none;
+  color: #ffffff;
 }
